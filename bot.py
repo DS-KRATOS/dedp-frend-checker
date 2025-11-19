@@ -4,11 +4,11 @@ import telebot
 import threading
 import os
 
-# === ДАННЫЕ ИЗ ПЕРЕМЕННЫХ ОКРУЖЕНИЯ ===
-BOT_TOKEN = os.environ.get("8548746165:AAEUb5fhB_CXBDsvCZWE80NRqOVa6pqM1Cg")
-API_KEY = os.environ.get("F76A393AD7354BA04A71E66493D586F8")
-TARGET_STEAM_ID = os.environ.get("76561198019556566")
-YOUR_TELEGRAM_ID = os.environ.get("819371543")
+# === ЧИТАЕМ ПЕРЕМЕННЫЕ ОКРУЖЕНИЯ ===
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_KEY = os.environ.get("STEAM_API_KEY")
+TARGET_STEAM_ID = os.environ.get("TARGET_STEAM_ID")
+YOUR_TELEGRAM_ID = os.environ.get("TELEGRAM_ID")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
